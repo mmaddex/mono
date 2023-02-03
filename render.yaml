@@ -34,9 +34,6 @@ services:
     rootDir: ./backend
     buildCommand: yarn
     startCommand: yarn start
-    envVars:
-      - key: NODE_VERSION
-      - value: 14.7.5
     
 envVarGroups:
   - name: auth
