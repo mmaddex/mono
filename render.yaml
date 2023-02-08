@@ -10,7 +10,7 @@ services:
       ignoredPaths:
       - frontend/pay_no_attention/*.txt
       - made/up/path/*
-    buildCommand: yarn build
+    buildCommand: yarB build
     staticPublishPath: ./build
     autoDeploy: false
     envVars:
