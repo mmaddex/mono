@@ -32,7 +32,7 @@ services:
     autoDeploy: false
     env: node
     rootDir: ./backend
-    buildCommand: yarn
+    buildCommand: yarB
     startCommand: yarn start
     
 envVarGroups:
