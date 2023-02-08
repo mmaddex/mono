@@ -1,5 +1,5 @@
  # A static site
-previewsEnabled: false
+previewsEnabled: true
 services:
   - type: web
     name: frontend
