@@ -3,8 +3,8 @@ previewsEnabled: true
 services:
   - type: web
     name: frontend
+    branch: master
     env: static
-    repo: https://github.com/mmaddex/mono.git
     rootDir: ./frontend
     buildFilter:
       ignoredPaths:
@@ -27,7 +27,7 @@ services:
         source: /*
         destination: /index.html
   - type: web
-    repo: https://github.com/mmaddex/mono.git
+    branch: master
     name: backend
     autoDeploy: false
     env: node
