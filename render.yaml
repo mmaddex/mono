@@ -34,6 +34,14 @@ services:
     rootDir: ./backend
     buildCommand: yarn
     startCommand: yarn start
+    envVars:
+      - key: DB_URL
+        fromDatabase:
+          name: eliphino
+          property: connectionString
+    
+ databases:
+  - name: eliphino
     
 envVarGroups:
   - name: auth
