@@ -17,7 +17,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>{!data ? "Loading..." : data}</p>        
         <p>good bye from 2022</p>
-        <p>hello 2023!</p>
+        <p>hello edit</p>
       </header>
     </div>
   );
