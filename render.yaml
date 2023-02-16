@@ -36,9 +36,11 @@ services:
     startCommand: yarn start
     envVars:
       - key: DB_URL
-        fromDatabase:
-          name: eliphino
-          property: connectionString
+      - value: test
+      - previewValue
+         fromDatabase:
+           name: eliphino
+           property: connectionString
     
 databases:
   - name: eliphino
