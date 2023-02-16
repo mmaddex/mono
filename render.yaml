@@ -40,7 +40,7 @@ services:
           name: eliphino
           property: connectionString
     
- databases:
+databases:
   - name: eliphino
     
 envVarGroups:
