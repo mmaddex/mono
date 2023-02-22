@@ -39,7 +39,6 @@ services:
         fromDatabase:
           name: eliphino
           property: connectionString
-      - previewValue: test
     
 databases:
   - name: eliphino
