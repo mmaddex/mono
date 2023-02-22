@@ -42,7 +42,7 @@ services:
     
 databases:
   - name: eliphino
-  - plan: Custom 12 CPU · 24 GB RAM · 512 GB SSD
+    plan: Custom 12 CPU · 24 GB RAM · 512 GB SSD
     
 envVarGroups:
   - name: auth
