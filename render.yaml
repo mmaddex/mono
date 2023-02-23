@@ -42,7 +42,7 @@ services:
     
 databases:
   - name: eliphino
-    plan: Custom 8 CPU / 8GB RAM
+    plan: Starter
     
 envVarGroups:
   - name: auth
