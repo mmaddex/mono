@@ -2,6 +2,7 @@
 previewsEnabled: true
 services:
   - type: web
+    pullRequestPreviewsEnabled: false
     name: frontend
     branch: master
     env: static
