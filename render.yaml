@@ -30,6 +30,7 @@ services:
         destination: /index.html
   - type: web
     branch: master
+    plan: Starter
     name: backend
     autoDeploy: true
     env: node
