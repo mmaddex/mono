@@ -18,7 +18,7 @@ function App() {
         <p>{!data ? "Loading..." : data}</p>        
         <p>good bye from 2022</p>
         <p>hello 2023!!</p>
-        <p>hello PE</p>
+        <p>bye PE</p>
       </header>
     </div>
   );
