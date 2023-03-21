@@ -8,10 +8,8 @@ app.get('/hello', (req, res) => {
 });
 
 app.get('/.well-known/test.json', (req, res) => {
-	res.set('Content-Length', '666');
-	res.set('x-test-Length', '666');
-	res.set('page-size', 20);
-	res.set('x-something', 'page-size');
+	res.set('content-length', '666');
+	res.set('transfer-encoding', 'deflate');
 	res.json({"oh": "really"});
 });
 
