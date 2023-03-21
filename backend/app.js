@@ -9,6 +9,7 @@ app.get('/hello', (req, res) => {
 
 app.get('/.well-known/test.json', (req, res) => {
 	res.set('Content-Length', '666');
+	res.set('x-test-Length', '666');
 	res.json({"oh": "really"});
 });
 
