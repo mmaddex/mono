@@ -9,7 +9,7 @@ app.get('/hello', (req, res) => {
 
 app.get('/.well-known/test.json', (req, res) => {
 	res.set('content-length', '666');
-	res.set('transfer-encoding', 'deflate');
+	res.set('content-type', 'application/json');
 	res.json({"oh": "really"});
 });
 
