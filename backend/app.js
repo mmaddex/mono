@@ -8,6 +8,7 @@ app.get('/hello', (req, res) => {
 });
 
 app.get('/.well-known/test.json', (req, res) => {
+	res.set('cache-control', 'no-transform');
 	res.set('content-length', '666');
 	res.set('content-type', 'application/json');
 	res.json({"oh": "really"});
