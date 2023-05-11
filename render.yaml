@@ -7,11 +7,11 @@ services:
     branch: master
     env: static
     rootDir: ./frontend
-    buildFilter:
-      ignoredPaths:
-      - frontend/pay_no_attention/*.txt
-      - test/ing/*
-      - made/up/path/*
+#    buildFilter:
+#      ignoredPaths:
+#      - frontend/pay_no_attention/*.txt
+#      - test/ing/*
+#      - made/up/path/*
     buildCommand: yarn build
     staticPublishPath: ./build
     autoDeploy: true
@@ -42,13 +42,3 @@ services:
         fromDatabase:
           name: eliphino
           property: connectionString
-    
-databases:
-  - name: eliphino
-    plan: Starter
-    
-envVarGroups:
-  - name: auth
-    envVars:
-      - key: AUTH_SECRET
-        sync: false
