@@ -4,7 +4,7 @@ services:
   - type: web
     pullRequestPreviewsEnabled: false
     name: frontend
-    branch: master
+    branch: deployment
     env: static
     rootDir: ./frontend
 #    buildFilter:
@@ -29,7 +29,7 @@ services:
         source: /*
         destination: /index.html
   - type: web
-    branch: master
+    branch: deployment
     plan: Starter
     name: backend
     autoDeploy: true
