@@ -37,8 +37,12 @@ services:
     rootDir: ./backend
     buildCommand: yarn
     startCommand: yarn start
-    envVars:
-      - key: DB_URL
-        fromDatabase:
-          name: eliphino
-          property: connectionString
+  - type: web
+    branch: master
+    plan: Starter
+    name: backend-slower-to-deploy
+    autoDeploy: true
+    env: node
+    rootDir: ./backend
+    buildCommand: yarn
+    startCommand: yarn start
