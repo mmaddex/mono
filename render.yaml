@@ -37,6 +37,9 @@ services:
     rootDir: ./backend
     buildCommand: yarn
     startCommand: yarn start
+    envVars:
+      - key: FORCE_SLOW_DEPENDENCY
+        value: 'force_slow_dependency'
   - type: web
     branch: master
     plan: Starter
@@ -46,3 +49,9 @@ services:
     rootDir: ./backend
     buildCommand: yarn
     startCommand: yarn start
+    envVars:
+      - key: IMPORTED_SLOW_DEPENDENCY
+        fromService:
+          type: web
+          name: backend
+          envVarKey: FORCE_SLOW_DEPENDENCY
