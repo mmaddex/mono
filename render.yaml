@@ -50,7 +50,7 @@ services:
     buildCommand: yarn
     startCommand: yarn start
     envVars:
-      - key: IMPORTED_SLOW_DEPENDENCY
+      - key: RENDER_INSTANCE_ID
         fromService:
           type: web
           name: backend
