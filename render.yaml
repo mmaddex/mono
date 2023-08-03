@@ -39,7 +39,7 @@ services:
     startCommand: yarn start
     envVars:
       - key: FORCE_SLOW_DEPENDENCY
-        value: 'force_slow_dependency'
+        value: 'notused'
   - type: web
     branch: master
     plan: Starter
@@ -50,8 +50,8 @@ services:
     buildCommand: yarn
     startCommand: yarn start
     envVars:
-      - key: RENDER_INSTANCE_ID
+      - key: IMPORTED_KEY
         fromService:
           type: web
           name: backend
-          envVarKey: FORCE_SLOW_DEPENDENCY
+          envVarKey: RENDER_INSTANCE_ID
