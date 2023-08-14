@@ -50,6 +50,11 @@ services:
     buildCommand: yarn
     startCommand: yarn start
     envVars:
+      - key: OTHER_IMPORTED
+        fromService:
+          type: web
+          name: backend
+          envVarKey: FORCE_SLOW_DEPENDENCY
       - key: IMPORTED_KEY
         fromService:
           type: web
