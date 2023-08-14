@@ -39,7 +39,7 @@ services:
     startCommand: yarn start
     envVars:
       - key: FORCE_SLOW_DEPENDENCY
-        value: 'notused'
+        value: 'notused_updated_inPR'
   - type: web
     branch: master
     plan: Starter
