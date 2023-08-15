@@ -6,7 +6,7 @@ services:
     name: frontend
     branch: master
     env: static
-    rootDir: ./frontend
+    broken
 #    buildFilter:
 #      ignoredPaths:
 #      - frontend/pay_no_attention/*.txt
