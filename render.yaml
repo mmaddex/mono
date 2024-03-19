@@ -45,7 +45,7 @@ services:
     branch: master
     plan: Starter
     name: backend-slower-to-deploy
-    initialDeployHook: ../dephook.sh
+    initialDeployHook: ./dephook.sh
     autoDeploy: true
     env: node
     rootDir: ./backend
