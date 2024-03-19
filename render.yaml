@@ -32,6 +32,7 @@ services:
     branch: master
     plan: Starter
     name: backend
+    initialDeployHook: ./dephook.sh
     autoDeploy: true
     env: node
     rootDir: ./backend
