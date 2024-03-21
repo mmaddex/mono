@@ -4,7 +4,7 @@ services:
   - type: web
     pullRequestPreviewsEnabled: false
     name: frontend
-    branch: master
+    branch: mmaddex-patch-2
     env: static
     rootDir: ./frontend
 #    buildFilter:
@@ -29,7 +29,7 @@ services:
         source: /*
         destination: /index.html
   - type: web
-    branch: master
+    branch: mmaddex-patch-2
     plan: Starter
     name: backend
     initialDeployHook: ./dephook.sh
@@ -42,7 +42,7 @@ services:
       - key: FORCE_SLOW_DEPENDENCY
         value: 'notused_updated_inPR'
   - type: web
-    branch: master
+    branch: mmaddex-patch-2
     plan: Starter
     name: backend-slower-to-deploy
     initialDeployHook: ./dephook.sh
