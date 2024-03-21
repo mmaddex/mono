@@ -1,10 +1,10 @@
  # A static site
-# previewsEnabled: true
+previewsEnabled: true
 services:
   - type: web
     pullRequestPreviewsEnabled: false
     name: frontend
-    branch: master
+    branch: test-pe
     env: static
     rootDir: ./frontend
 #    buildFilter:
@@ -29,7 +29,7 @@ services:
         source: /*
         destination: /index.html
   - type: web
-    branch: master
+    branch: test-pe
     plan: Starter
     name: backend
     initialDeployHook: ./dephook.sh
@@ -42,7 +42,7 @@ services:
       - key: FORCE_SLOW_DEPENDENCY
         value: 'notused_updated_inPR'
   - type: web
-    branch: master
+    branch: test-pe
     plan: Starter
     name: backend-slower-to-deploy
     initialDeployHook: ./dephook.sh
