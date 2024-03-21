@@ -1,5 +1,5 @@
  # A static site
-previewsEnabled: true
+# previewsEnabled: true
 services:
   - type: web
     pullRequestPreviewsEnabled: false
