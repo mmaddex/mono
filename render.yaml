@@ -3,7 +3,7 @@ previewsExpireAfterDays: 1
 previewsEnabled: true
 services:
   - type: web
-    pullRequestPreviewsEnabled: false
+    pullRequestPreviewsEnabled: true
     name: frontend
     env: static
     rootDir: ./frontend
