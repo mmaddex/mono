@@ -65,6 +65,7 @@ envVarGroups:
   - name: testvargroup
     envVars:
       - key: syncfalse
+        value: notgonnahappen
         sync: false
       - key: alsofalse
         sync: false
