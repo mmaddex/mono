@@ -21,6 +21,7 @@ services:
           type: web
           name: backend
           property: host
+      - fromGroup: testvargroup
     routes:
       - type: rewrite
         source: /api/*
@@ -30,24 +31,25 @@ services:
         destination: /index.html
   - type: web
     branch: master
-    plan: Starter
+    plan: starter
     name: backend
     initialDeployHook: ./dephook.sh
     autoDeploy: true
-    env: node
+    runtime: node
     rootDir: ./backend
     buildCommand: yarn
     startCommand: yarn start
     envVars:
       - key: FORCE_SLOW_DEPENDENCY
         value: 'notused_updated_inPR'
+      - fromGroup: testvargroup
   - type: web
     branch: master
-    plan: Starter
+    plan: starter
     name: backend-slower-to-deploy
     initialDeployHook: ./dephook.sh
     autoDeploy: true
-    env: node
+    runtime: node
     rootDir: ./backend
     buildCommand: yarn
     startCommand: yarn start
@@ -62,3 +64,13 @@ services:
           type: web
           name: backend
           property: host
+envVarGroups:
+  - name: testvargroup
+    envVars:
+      - key: syncit
+        value: showsup
+        sync: false
+      - key: dontsyncit
+        value: dontshowup
+        previewValue: falseit
+    
