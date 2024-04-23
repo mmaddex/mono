@@ -5,7 +5,6 @@ services:
   - type: web
     pullRequestPreviewsEnabled: false
     name: frontend
-    branch: master
     env: static
     rootDir: ./frontend
 #    buildFilter:
@@ -31,7 +30,6 @@ services:
         source: /*
         destination: /index.html
   - type: web
-    branch: master
     plan: starter
     name: backend
     initialDeployHook: ./dephook.sh
@@ -45,7 +43,6 @@ services:
         value: 'notused_updated_inPR'
       - fromGroup: testvargroup
   - type: web
-    branch: master
     plan: starter
     name: backend-slower-to-deploy
     initialDeployHook: ./dephook.sh
