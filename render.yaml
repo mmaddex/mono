@@ -1,6 +1,6 @@
  # A static site
 previewsExpireAfterDays: 1
-previewsEnabled: true
+previewsEnabled: false
 services:
   - type: web
     pullRequestPreviewsEnabled: true
@@ -66,6 +66,5 @@ envVarGroups:
     envVars:
       - key: syncfalse
         value: notgonnahappen
-        sync: false
       - key: alsofalse
         sync: false
