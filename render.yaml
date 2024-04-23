@@ -21,7 +21,6 @@ services:
           type: web
           name: backend
           property: host
-      - fromGroup: testvargroup
     routes:
       - type: rewrite
         source: /api/*
