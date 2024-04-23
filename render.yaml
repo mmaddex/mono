@@ -67,10 +67,11 @@ services:
 envVarGroups:
   - name: testvargroup
     envVars:
-      - key: syncit
-        value: showsup
+      - key: syncfalse
         sync: false
-      - key: dontsyncit
-        value: dontshowup
-        previewValue: falseit
+      - key: altpreview
+        value: dontshowup_and_falseit
+        previewValue: falseit_and_dontshowup
+      - key: regular
+        value: regularvalue
     
