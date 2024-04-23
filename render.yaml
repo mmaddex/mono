@@ -67,9 +67,5 @@ envVarGroups:
     envVars:
       - key: syncfalse
         sync: false
-      - key: altpreview
-        value: dontshowup_and_falseit
-        previewValue: falseit_and_dontshowup
-      - key: regular
-        value: regularvalue
-    
+      - key: alsofalse
+        sync: false
