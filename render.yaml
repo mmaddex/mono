@@ -1,6 +1,6 @@
  # A static site
 previewsExpireAfterDays: 1
-previewsEnabled: false
+previewsEnabled: true
 services:
   - type: web
     pullRequestPreviewsEnabled: true
