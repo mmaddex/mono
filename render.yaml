@@ -35,7 +35,7 @@ services:
       - key: OTHER_IMPORTED_KEY
         fromService:
           type: web
-          name: backend-slower-to-deply
+          name: backend-slower-to-deploy
           property: host
       - key: FORCE_SLOW_DEPENDENCY
         value: 'notused_updated_inPR'
