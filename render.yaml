@@ -15,12 +15,6 @@ services:
     buildCommand: yarn build
     staticPublishPath: ./build
     autoDeploy: true
-    envVars:
-      - key: API_URL
-        fromService:
-          type: web
-          name: backend
-          property: host
     routes:
       - type: rewrite
         source: /api/*
