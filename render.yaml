@@ -32,8 +32,8 @@ services:
     buildCommand: yarn
     startCommand: yarn start
     envVars:
-     - key: OTHER_IMPORTED_KEY
-       fromService:
+      - key: OTHER_IMPORTED_KEY
+        fromService:
           type: web
           name: backend-slow-to-deply
           property: host
