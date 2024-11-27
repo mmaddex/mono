@@ -38,6 +38,11 @@ services:
     buildCommand: yarn
     startCommand: yarn start
     envVars:
+     - key: OTHER_IMPORTED_KEY
+        fromService:
+          type: web
+          name: backend-slow-to-deply
+          property: host
       - key: FORCE_SLOW_DEPENDENCY
         value: 'notused_updated_inPR'
       - fromGroup: testvargroup
